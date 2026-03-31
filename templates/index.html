@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Diabetes Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1>🧠 Diabetes Risk Analyzer</h1>
+    <p class="subtitle">AI-powered health insights</p>
+
+    <form id="form" class="card">
+        <div class="grid">
+            <input type="text" placeholder="Pregnancies" id="pregnancies" required>
+            <input type="text" placeholder="Glucose" id="glucose" required>
+            <input type="text" placeholder="Blood Pressure" id="bloodpressure" required>
+            <input type="text" placeholder="Skin Thickness" id="skinthickness" required>
+            <input type="text" placeholder="Insulin" id="insulin" required>
+            <input type="text" placeholder="BMI" id="bmi" required>
+            <input type="text" placeholder="DPF" id="dpf" required>
+            <input type="text" placeholder="Age" id="age" required>
+        </div>
+
+        <button type="submit">Analyze Risk</button>
+    </form>
+
+    <!-- RESULT -->
+    <div id="resultBox" class="result hidden">
+        <h2 id="result"></h2>
+        <p id="riskLevel"></p>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <p id="percentage"></p>
+        <canvas id="chart"></canvas>
+    </div>
+
+    <!-- FACTS SECTION -->
+    <div class="facts">
+        <h2>💡 Did You Know?</h2>
+        <ul>
+            <li>Over 400 million people worldwide have diabetes</li>
+            <li>Early detection can prevent complications</li>
+            <li>Healthy diet & exercise reduce risk significantly</li>
+            <li>Type 2 diabetes is the most common form</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
